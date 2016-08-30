@@ -1,0 +1,700 @@
+[
+    {
+        "name": "Activation", 
+        "attrs": [
+            "activation"
+        ]
+    }, 
+    {
+        "name": "ActivityRegularization", 
+        "attrs": [
+            "l1", 
+            "l2"
+        ]
+    }, 
+    {
+        "name": "ActivityRegularizer", 
+        "attrs": [
+            "l1", 
+            "l2"
+        ]
+    }, 
+    {
+        "name": "AtrousConvolution2D", 
+        "attrs": [
+            "nb_filter", 
+            "nb_row", 
+            "nb_col", 
+            "init", 
+            "activation", 
+            "weights", 
+            "border_mode", 
+            "subsample", 
+            "atrous_rate", 
+            "dim_ordering", 
+            "W_regularizer", 
+            "b_regularizer", 
+            "activity_regularizer", 
+            "W_constraint", 
+            "b_constraint", 
+            "bias"
+        ]
+    }, 
+    {
+        "name": "AtrousConvolution2D", 
+        "attrs": [
+            "nb_filter", 
+            "nb_row", 
+            "nb_col", 
+            "init", 
+            "activation", 
+            "weights", 
+            "border_mode", 
+            "subsample", 
+            "atrous_rate", 
+            "dim_ordering", 
+            "W_regularizer", 
+            "b_regularizer", 
+            "activity_regularizer", 
+            "W_constraint", 
+            "b_constraint", 
+            "bias"
+        ]
+    }, 
+    {
+        "name": "AveragePooling1D", 
+        "attrs": [
+            "pool_length", 
+            "stride", 
+            "border_mode"
+        ]
+    }, 
+    {
+        "name": "AveragePooling2D", 
+        "attrs": [
+            "pool_size", 
+            "strides", 
+            "border_mode", 
+            "dim_ordering"
+        ]
+    }, 
+    {
+        "name": "AveragePooling3D", 
+        "attrs": [
+            "pool_size", 
+            "strides", 
+            "border_mode", 
+            "dim_ordering"
+        ]
+    }, 
+    {
+        "name": "BatchNormalization", 
+        "attrs": [
+            "epsilon", 
+            "mode", 
+            "axis", 
+            "momentum", 
+            "weights", 
+            "beta_init", 
+            "gamma_init"
+        ]
+    }, 
+    {
+        "name": "Convolution1D", 
+        "attrs": [
+            "nb_filter", 
+            "filter_length", 
+            "init", 
+            "activation", 
+            "weights", 
+            "border_mode", 
+            "subsample_length", 
+            "W_regularizer", 
+            "b_regularizer", 
+            "activity_regularizer", 
+            "W_constraint", 
+            "b_constraint", 
+            "bias", 
+            "input_dim", 
+            "input_length"
+        ]
+    }, 
+    {
+        "name": "Convolution2D", 
+        "attrs": [
+            "nb_filter", 
+            "nb_row", 
+            "nb_col", 
+            "init", 
+            "activation", 
+            "weights", 
+            "border_mode", 
+            "subsample", 
+            "dim_ordering", 
+            "W_regularizer", 
+            "b_regularizer", 
+            "activity_regularizer", 
+            "W_constraint", 
+            "b_constraint", 
+            "bias"
+        ]
+    }, 
+    {
+        "name": "Convolution3D", 
+        "attrs": [
+            "nb_filter", 
+            "kernel_dim1", 
+            "kernel_dim2", 
+            "kernel_dim3", 
+            "init", 
+            "activation", 
+            "weights", 
+            "border_mode", 
+            "subsample", 
+            "dim_ordering", 
+            "W_regularizer", 
+            "b_regularizer", 
+            "activity_regularizer", 
+            "W_constraint", 
+            "b_constraint", 
+            "bias"
+        ]
+    }, 
+    {
+        "name": "Convolution1D", 
+        "attrs": [
+            "nb_filter", 
+            "filter_length", 
+            "init", 
+            "activation", 
+            "weights", 
+            "border_mode", 
+            "subsample_length", 
+            "W_regularizer", 
+            "b_regularizer", 
+            "activity_regularizer", 
+            "W_constraint", 
+            "b_constraint", 
+            "bias", 
+            "input_dim", 
+            "input_length"
+        ]
+    }, 
+    {
+        "name": "Convolution2D", 
+        "attrs": [
+            "nb_filter", 
+            "nb_row", 
+            "nb_col", 
+            "init", 
+            "activation", 
+            "weights", 
+            "border_mode", 
+            "subsample", 
+            "dim_ordering", 
+            "W_regularizer", 
+            "b_regularizer", 
+            "activity_regularizer", 
+            "W_constraint", 
+            "b_constraint", 
+            "bias"
+        ]
+    }, 
+    {
+        "name": "Convolution3D", 
+        "attrs": [
+            "nb_filter", 
+            "kernel_dim1", 
+            "kernel_dim2", 
+            "kernel_dim3", 
+            "init", 
+            "activation", 
+            "weights", 
+            "border_mode", 
+            "subsample", 
+            "dim_ordering", 
+            "W_regularizer", 
+            "b_regularizer", 
+            "activity_regularizer", 
+            "W_constraint", 
+            "b_constraint", 
+            "bias"
+        ]
+    }, 
+    {
+        "name": "Deconvolution2D", 
+        "attrs": [
+            "nb_filter", 
+            "nb_row", 
+            "nb_col", 
+            "output_shape", 
+            "init", 
+            "activation", 
+            "weights", 
+            "border_mode", 
+            "subsample", 
+            "dim_ordering", 
+            "W_regularizer", 
+            "b_regularizer", 
+            "activity_regularizer", 
+            "W_constraint", 
+            "b_constraint", 
+            "bias"
+        ]
+    }, 
+    {
+        "name": "Deconvolution2D", 
+        "attrs": [
+            "nb_filter", 
+            "nb_row", 
+            "nb_col", 
+            "output_shape", 
+            "init", 
+            "activation", 
+            "weights", 
+            "border_mode", 
+            "subsample", 
+            "dim_ordering", 
+            "W_regularizer", 
+            "b_regularizer", 
+            "activity_regularizer", 
+            "W_constraint", 
+            "b_constraint", 
+            "bias"
+        ]
+    }, 
+    {
+        "name": "Dense", 
+        "attrs": [
+            "output_dim", 
+            "init", 
+            "activation", 
+            "weights", 
+            "W_regularizer", 
+            "b_regularizer", 
+            "activity_regularizer", 
+            "W_constraint", 
+            "b_constraint", 
+            "bias", 
+            "input_dim"
+        ]
+    }, 
+    {
+        "name": "Dropout", 
+        "attrs": [
+            "p"
+        ]
+    }, 
+    {
+        "name": "ELU", 
+        "attrs": [
+            "alpha"
+        ]
+    }, 
+    {
+        "name": "Embedding", 
+        "attrs": [
+            "input_dim", 
+            "output_dim", 
+            "init", 
+            "input_length", 
+            "W_regularizer", 
+            "activity_regularizer", 
+            "W_constraint", 
+            "mask_zero", 
+            "weights", 
+            "dropout"
+        ]
+    }, 
+    {
+        "name": "Flatten", 
+        "attrs": []
+    }, 
+    {
+        "name": "GRU", 
+        "attrs": [
+            "output_dim", 
+            "init", 
+            "inner_init", 
+            "activation", 
+            "inner_activation", 
+            "W_regularizer", 
+            "U_regularizer", 
+            "b_regularizer", 
+            "dropout_W", 
+            "dropout_U"
+        ]
+    }, 
+    {
+        "name": "GaussianDropout", 
+        "attrs": [
+            "p"
+        ]
+    }, 
+    {
+        "name": "GaussianNoise", 
+        "attrs": [
+            "sigma"
+        ]
+    }, 
+    {
+        "name": "Highway", 
+        "attrs": [
+            "init", 
+            "transform_bias", 
+            "activation", 
+            "weights", 
+            "W_regularizer", 
+            "b_regularizer", 
+            "activity_regularizer", 
+            "W_constraint", 
+            "b_constraint", 
+            "bias", 
+            "input_dim"
+        ]
+    }, 
+    {
+        "name": "InputLayer", 
+        "attrs": [
+            "input_shape", 
+            "batch_input_shape", 
+            "input_dtype", 
+            "input_tensor", 
+            "name"
+        ]
+    }, 
+    {
+        "name": "InputSpec", 
+        "attrs": [
+            "dtype", 
+            "shape", 
+            "ndim"
+        ]
+    }, 
+    {
+        "name": "LSTM", 
+        "attrs": [
+            "output_dim", 
+            "init", 
+            "inner_init", 
+            "forget_bias_init", 
+            "activation", 
+            "inner_activation", 
+            "W_regularizer", 
+            "U_regularizer", 
+            "b_regularizer", 
+            "dropout_W", 
+            "dropout_U"
+        ]
+    }, 
+    {
+        "name": "Lambda", 
+        "attrs": [
+            "function", 
+            "output_shape", 
+            "arguments"
+        ]
+    }, 
+    {
+        "name": "Layer", 
+        "attrs": []
+    }, 
+    {
+        "name": "LeakyReLU", 
+        "attrs": [
+            "alpha"
+        ]
+    }, 
+    {
+        "name": "LocallyConnected1D", 
+        "attrs": [
+            "nb_filter", 
+            "filter_length", 
+            "init", 
+            "activation", 
+            "weights", 
+            "border_mode", 
+            "subsample_length", 
+            "W_regularizer", 
+            "b_regularizer", 
+            "activity_regularizer", 
+            "W_constraint", 
+            "b_constraint", 
+            "bias", 
+            "input_dim", 
+            "input_length"
+        ]
+    }, 
+    {
+        "name": "LocallyConnected2D", 
+        "attrs": [
+            "nb_filter", 
+            "nb_row", 
+            "nb_col", 
+            "init", 
+            "activation", 
+            "weights", 
+            "border_mode", 
+            "subsample", 
+            "dim_ordering", 
+            "W_regularizer", 
+            "b_regularizer", 
+            "activity_regularizer", 
+            "W_constraint", 
+            "b_constraint", 
+            "bias"
+        ]
+    }, 
+    {
+        "name": "Masking", 
+        "attrs": [
+            "mask_value"
+        ]
+    }, 
+    {
+        "name": "MaxPooling1D", 
+        "attrs": [
+            "pool_length", 
+            "stride", 
+            "border_mode"
+        ]
+    }, 
+    {
+        "name": "MaxPooling2D", 
+        "attrs": [
+            "pool_size", 
+            "strides", 
+            "border_mode", 
+            "dim_ordering"
+        ]
+    }, 
+    {
+        "name": "MaxPooling3D", 
+        "attrs": [
+            "pool_size", 
+            "strides", 
+            "border_mode", 
+            "dim_ordering"
+        ]
+    }, 
+    {
+        "name": "MaxoutDense", 
+        "attrs": [
+            "output_dim", 
+            "nb_feature", 
+            "init", 
+            "weights", 
+            "W_regularizer", 
+            "b_regularizer", 
+            "activity_regularizer", 
+            "W_constraint", 
+            "b_constraint", 
+            "bias", 
+            "input_dim"
+        ]
+    }, 
+    {
+        "name": "Merge", 
+        "attrs": [
+            "layers", 
+            "mode", 
+            "concat_axis", 
+            "dot_axes", 
+            "output_shape", 
+            "output_mask", 
+            "node_indices", 
+            "tensor_indices", 
+            "name"
+        ]
+    }, 
+    {
+        "name": "PReLU", 
+        "attrs": [
+            "init", 
+            "weights"
+        ]
+    }, 
+    {
+        "name": "ParametricSoftplus", 
+        "attrs": [
+            "alpha_init", 
+            "beta_init", 
+            "weights"
+        ]
+    }, 
+    {
+        "name": "Permute", 
+        "attrs": [
+            "dims"
+        ]
+    }, 
+    {
+        "name": "Recurrent", 
+        "attrs": [
+            "weights", 
+            "return_sequences", 
+            "go_backwards", 
+            "stateful", 
+            "unroll", 
+            "consume_less", 
+            "input_dim", 
+            "input_length"
+        ]
+    }, 
+    {
+        "name": "RepeatVector", 
+        "attrs": [
+            "n"
+        ]
+    }, 
+    {
+        "name": "Reshape", 
+        "attrs": [
+            "target_shape"
+        ]
+    }, 
+    {
+        "name": "SReLU", 
+        "attrs": [
+            "t_left_init", 
+            "a_left_init", 
+            "t_right_init", 
+            "a_right_init"
+        ]
+    }, 
+    {
+        "name": "SeparableConvolution2D", 
+        "attrs": [
+            "nb_filter", 
+            "nb_row", 
+            "nb_col", 
+            "init", 
+            "activation", 
+            "weights", 
+            "border_mode", 
+            "subsample", 
+            "depth_multiplier", 
+            "dim_ordering", 
+            "depthwise_regularizer", 
+            "pointwise_regularizer", 
+            "b_regularizer", 
+            "activity_regularizer", 
+            "depthwise_constraint", 
+            "pointwise_constraint", 
+            "b_constraint", 
+            "bias"
+        ]
+    }, 
+    {
+        "name": "SeparableConvolution2D", 
+        "attrs": [
+            "nb_filter", 
+            "nb_row", 
+            "nb_col", 
+            "init", 
+            "activation", 
+            "weights", 
+            "border_mode", 
+            "subsample", 
+            "depth_multiplier", 
+            "dim_ordering", 
+            "depthwise_regularizer", 
+            "pointwise_regularizer", 
+            "b_regularizer", 
+            "activity_regularizer", 
+            "depthwise_constraint", 
+            "pointwise_constraint", 
+            "b_constraint", 
+            "bias"
+        ]
+    }, 
+    {
+        "name": "SimpleRNN", 
+        "attrs": [
+            "output_dim", 
+            "init", 
+            "inner_init", 
+            "activation", 
+            "W_regularizer", 
+            "U_regularizer", 
+            "b_regularizer", 
+            "dropout_W", 
+            "dropout_U"
+        ]
+    }, 
+    {
+        "name": "ThresholdedReLU", 
+        "attrs": [
+            "theta"
+        ]
+    }, 
+    {
+        "name": "TimeDistributed", 
+        "attrs": [
+            "layer"
+        ]
+    }, 
+    {
+        "name": "TimeDistributedDense", 
+        "attrs": [
+            "output_dim", 
+            "init", 
+            "activation", 
+            "weights", 
+            "W_regularizer", 
+            "b_regularizer", 
+            "activity_regularizer", 
+            "W_constraint", 
+            "b_constraint", 
+            "bias", 
+            "input_dim", 
+            "input_length"
+        ]
+    }, 
+    {
+        "name": "UpSampling1D", 
+        "attrs": [
+            "length"
+        ]
+    }, 
+    {
+        "name": "UpSampling2D", 
+        "attrs": [
+            "size", 
+            "dim_ordering"
+        ]
+    }, 
+    {
+        "name": "UpSampling3D", 
+        "attrs": [
+            "size", 
+            "dim_ordering"
+        ]
+    }, 
+    {
+        "name": "Wrapper", 
+        "attrs": [
+            "layer"
+        ]
+    }, 
+    {
+        "name": "ZeroPadding1D", 
+        "attrs": [
+            "padding"
+        ]
+    }, 
+    {
+        "name": "ZeroPadding2D", 
+        "attrs": [
+            "padding", 
+            "dim_ordering"
+        ]
+    }, 
+    {
+        "name": "ZeroPadding3D", 
+        "attrs": [
+            "padding", 
+            "dim_ordering"
+        ]
+    }
+]
