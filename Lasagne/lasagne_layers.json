@@ -1,0 +1,527 @@
+[
+    {
+        "name": "BatchNormLayer", 
+        "attrs": [
+            "incoming", 
+            "axes", 
+            "epsilon", 
+            "alpha", 
+            "beta", 
+            "gamma", 
+            "mean", 
+            "inv_std"
+        ]
+    }, 
+    {
+        "name": "BiasLayer", 
+        "attrs": [
+            "incoming", 
+            "b", 
+            "shared_axes"
+        ]
+    }, 
+    {
+        "name": "ConcatLayer", 
+        "attrs": [
+            "incomings", 
+            "axis", 
+            "cropping"
+        ]
+    }, 
+    {
+        "name": "Conv1DLayer", 
+        "attrs": [
+            "incoming", 
+            "num_filters", 
+            "filter_size", 
+            "stride", 
+            "pad", 
+            "untie_biases", 
+            "W", 
+            "b", 
+            "nonlinearity", 
+            "flip_filters", 
+            "convolution"
+        ]
+    }, 
+    {
+        "name": "Conv2DLayer", 
+        "attrs": [
+            "incoming", 
+            "num_filters", 
+            "filter_size", 
+            "stride", 
+            "pad", 
+            "untie_biases", 
+            "W", 
+            "b", 
+            "nonlinearity", 
+            "flip_filters", 
+            "convolution"
+        ]
+    }, 
+    {
+        "name": "CustomRecurrentLayer", 
+        "attrs": [
+            "incoming", 
+            "input_to_hidden", 
+            "hidden_to_hidden", 
+            "nonlinearity", 
+            "hid_init", 
+            "backwards", 
+            "learn_init", 
+            "gradient_steps", 
+            "grad_clipping", 
+            "unroll_scan", 
+            "precompute_input", 
+            "mask_input", 
+            "only_return_final"
+        ]
+    }, 
+    {
+        "name": "TransposedConv2DLayer", 
+        "attrs": [
+            "incoming", 
+            "num_filters", 
+            "filter_size", 
+            "stride", 
+            "crop", 
+            "untie_biases", 
+            "W", 
+            "b", 
+            "nonlinearity", 
+            "flip_filters"
+        ]
+    }, 
+    {
+        "name": "DenseLayer", 
+        "attrs": [
+            "incoming", 
+            "num_units", 
+            "W", 
+            "b", 
+            "nonlinearity"
+        ]
+    }, 
+    {
+        "name": "DilatedConv2DLayer", 
+        "attrs": [
+            "incoming", 
+            "num_filters", 
+            "filter_size", 
+            "dilation", 
+            "pad", 
+            "untie_biases", 
+            "W", 
+            "b", 
+            "nonlinearity", 
+            "flip_filters"
+        ]
+    }, 
+    {
+        "name": "DimshuffleLayer", 
+        "attrs": [
+            "incoming", 
+            "pattern"
+        ]
+    }, 
+    {
+        "name": "DropoutLayer", 
+        "attrs": [
+            "incoming", 
+            "p", 
+            "rescale"
+        ]
+    }, 
+    {
+        "name": "ElemwiseMergeLayer", 
+        "attrs": [
+            "incomings", 
+            "merge_function", 
+            "cropping"
+        ]
+    }, 
+    {
+        "name": "ElemwiseSumLayer", 
+        "attrs": [
+            "incomings", 
+            "coeffs", 
+            "cropping"
+        ]
+    }, 
+    {
+        "name": "EmbeddingLayer", 
+        "attrs": [
+            "incoming", 
+            "input_size", 
+            "output_size", 
+            "W"
+        ]
+    }, 
+    {
+        "name": "ExpressionLayer", 
+        "attrs": [
+            "incoming", 
+            "function", 
+            "output_shape"
+        ]
+    }, 
+    {
+        "name": "FeaturePoolLayer", 
+        "attrs": [
+            "incoming", 
+            "pool_size", 
+            "axis", 
+            "pool_function"
+        ]
+    }, 
+    {
+        "name": "FeatureWTALayer", 
+        "attrs": [
+            "incoming", 
+            "pool_size", 
+            "axis"
+        ]
+    }, 
+    {
+        "name": "FlattenLayer", 
+        "attrs": [
+            "incoming", 
+            "outdim"
+        ]
+    }, 
+    {
+        "name": "GRULayer", 
+        "attrs": [
+            "incoming", 
+            "num_units", 
+            "resetgate", 
+            "updategate", 
+            "hidden_update", 
+            "hid_init", 
+            "backwards", 
+            "learn_init", 
+            "gradient_steps", 
+            "grad_clipping", 
+            "unroll_scan", 
+            "precompute_input", 
+            "mask_input", 
+            "only_return_final"
+        ]
+    }, 
+    {
+        "name": "Gate", 
+        "attrs": [
+            "W_in", 
+            "W_hid", 
+            "W_cell", 
+            "b", 
+            "nonlinearity"
+        ]
+    }, 
+    {
+        "name": "GaussianNoiseLayer", 
+        "attrs": [
+            "incoming", 
+            "sigma"
+        ]
+    }, 
+    {
+        "name": "GlobalPoolLayer", 
+        "attrs": [
+            "incoming", 
+            "pool_function"
+        ]
+    }, 
+    {
+        "name": "InputLayer", 
+        "attrs": [
+            "shape", 
+            "input_var", 
+            "name"
+        ]
+    }, 
+    {
+        "name": "InverseLayer", 
+        "attrs": [
+            "incoming", 
+            "layer"
+        ]
+    }, 
+    {
+        "name": "LSTMLayer", 
+        "attrs": [
+            "incoming", 
+            "num_units", 
+            "ingate", 
+            "forgetgate", 
+            "cell", 
+            "outgate", 
+            "nonlinearity", 
+            "cell_init", 
+            "hid_init", 
+            "backwards", 
+            "learn_init", 
+            "peepholes", 
+            "gradient_steps", 
+            "grad_clipping", 
+            "unroll_scan", 
+            "precompute_input", 
+            "mask_input", 
+            "only_return_final"
+        ]
+    }, 
+    {
+        "name": "Layer", 
+        "attrs": [
+            "incoming", 
+            "name"
+        ]
+    }, 
+    {
+        "name": "LocalResponseNormalization2DLayer", 
+        "attrs": [
+            "incoming", 
+            "alpha", 
+            "k", 
+            "beta", 
+            "n"
+        ]
+    }, 
+    {
+        "name": "MaxPool1DLayer", 
+        "attrs": [
+            "incoming", 
+            "pool_size", 
+            "stride", 
+            "pad", 
+            "ignore_border"
+        ]
+    }, 
+    {
+        "name": "MaxPool2DLayer", 
+        "attrs": [
+            "incoming", 
+            "pool_size", 
+            "stride", 
+            "pad", 
+            "ignore_border"
+        ]
+    }, 
+    {
+        "name": "MergeLayer", 
+        "attrs": [
+            "incomings", 
+            "name"
+        ]
+    }, 
+    {
+        "name": "NINLayer", 
+        "attrs": [
+            "incoming", 
+            "num_units", 
+            "untie_biases", 
+            "W", 
+            "b", 
+            "nonlinearity"
+        ]
+    }, 
+    {
+        "name": "NonlinearityLayer", 
+        "attrs": [
+            "incoming", 
+            "nonlinearity"
+        ]
+    }, 
+    {
+        "name": "PadLayer", 
+        "attrs": [
+            "incoming", 
+            "width", 
+            "val", 
+            "batch_ndim"
+        ]
+    }, 
+    {
+        "name": "ParametricRectifierLayer", 
+        "attrs": [
+            "incoming", 
+            "alpha", 
+            "shared_axes"
+        ]
+    }, 
+    {
+        "name": "Pool1DLayer", 
+        "attrs": [
+            "incoming", 
+            "pool_size", 
+            "stride", 
+            "pad", 
+            "ignore_border", 
+            "mode"
+        ]
+    }, 
+    {
+        "name": "Pool2DLayer", 
+        "attrs": [
+            "incoming", 
+            "pool_size", 
+            "stride", 
+            "pad", 
+            "ignore_border", 
+            "mode"
+        ]
+    }, 
+    {
+        "name": "RandomizedRectifierLayer", 
+        "attrs": [
+            "incoming", 
+            "lower", 
+            "upper", 
+            "shared_axes"
+        ]
+    }, 
+    {
+        "name": "RecurrentLayer", 
+        "attrs": [
+            "incoming", 
+            "num_units", 
+            "W_in_to_hid", 
+            "W_hid_to_hid", 
+            "b", 
+            "nonlinearity", 
+            "hid_init", 
+            "backwards", 
+            "learn_init", 
+            "gradient_steps", 
+            "grad_clipping", 
+            "unroll_scan", 
+            "precompute_input", 
+            "mask_input", 
+            "only_return_final"
+        ]
+    }, 
+    {
+        "name": "ReshapeLayer", 
+        "attrs": [
+            "incoming", 
+            "shape"
+        ]
+    }, 
+    {
+        "name": "ScaleLayer", 
+        "attrs": [
+            "incoming", 
+            "scales", 
+            "shared_axes"
+        ]
+    }, 
+    {
+        "name": "SliceLayer", 
+        "attrs": [
+            "incoming", 
+            "indices", 
+            "axis"
+        ]
+    }, 
+    {
+        "name": "TPSTransformerLayer", 
+        "attrs": [
+            "incoming", 
+            "localization_network", 
+            "downsample_factor", 
+            "control_points", 
+            "precompute_grid"
+        ]
+    }, 
+    {
+        "name": "TransformerLayer", 
+        "attrs": [
+            "incoming", 
+            "localization_network", 
+            "downsample_factor"
+        ]
+    }, 
+    {
+        "name": "TransposedConv2DLayer", 
+        "attrs": [
+            "incoming", 
+            "num_filters", 
+            "filter_size", 
+            "stride", 
+            "crop", 
+            "untie_biases", 
+            "W", 
+            "b", 
+            "nonlinearity", 
+            "flip_filters"
+        ]
+    }, 
+    {
+        "name": "Upscale1DLayer", 
+        "attrs": [
+            "incoming", 
+            "scale_factor"
+        ]
+    }, 
+    {
+        "name": "Upscale2DLayer", 
+        "attrs": [
+            "incoming", 
+            "scale_factor"
+        ]
+    }, 
+    {
+        "name": "Upscale3DLayer", 
+        "attrs": [
+            "incoming", 
+            "scale_factor"
+        ]
+    }, 
+    {
+        "name": "ConcatLayer", 
+        "attrs": [
+            "incomings", 
+            "axis", 
+            "cropping"
+        ]
+    }, 
+    {
+        "name": "DimshuffleLayer", 
+        "attrs": [
+            "incoming", 
+            "pattern"
+        ]
+    }, 
+    {
+        "name": "DropoutLayer", 
+        "attrs": [
+            "incoming", 
+            "p", 
+            "rescale"
+        ]
+    }, 
+    {
+        "name": "FlattenLayer", 
+        "attrs": [
+            "incoming", 
+            "outdim"
+        ]
+    }, 
+    {
+        "name": "PadLayer", 
+        "attrs": [
+            "incoming", 
+            "width", 
+            "val", 
+            "batch_ndim"
+        ]
+    }, 
+    {
+        "name": "ReshapeLayer", 
+        "attrs": [
+            "incoming", 
+            "shape"
+        ]
+    }
+]

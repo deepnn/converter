@@ -1,0 +1,1785 @@
+[
+    {
+        "name": "Activation", 
+        "baseType": "Layer", 
+        "params": [
+            "activation"
+        ], 
+        "types": {}, 
+        "defaults": {}, 
+        "type": "keras.layers.core"
+    }, 
+    {
+        "name": "ActivityRegularization", 
+        "baseType": "Layer", 
+        "params": [
+            "l1", 
+            "l2"
+        ], 
+        "types": {
+            "l2": "float", 
+            "l1": "float"
+        }, 
+        "defaults": {
+            "l2": 0.0, 
+            "l1": 0.0
+        }, 
+        "type": "keras.layers.core"
+    }, 
+    {
+        "name": "ActivityRegularizer", 
+        "baseType": "Regularizer", 
+        "params": [
+            "l1", 
+            "l2"
+        ], 
+        "types": {
+            "l2": "float", 
+            "l1": "float"
+        }, 
+        "defaults": {
+            "l2": 0.0, 
+            "l1": 0.0
+        }, 
+        "type": "keras.regularizers"
+    }, 
+    {
+        "name": "AtrousConvolution2D", 
+        "baseType": "Convolution2D", 
+        "params": [
+            "nb_filter", 
+            "nb_row", 
+            "nb_col", 
+            "init", 
+            "activation", 
+            "weights", 
+            "border_mode", 
+            "subsample", 
+            "atrous_rate", 
+            "dim_ordering", 
+            "W_regularizer", 
+            "b_regularizer", 
+            "activity_regularizer", 
+            "W_constraint", 
+            "b_constraint", 
+            "bias"
+        ], 
+        "types": {
+            "atrous_rate": "tuple", 
+            "b_constraint": "NoneType", 
+            "activation": "str", 
+            "W_constraint": "NoneType", 
+            "dim_ordering": "str", 
+            "subsample": "tuple", 
+            "init": "str", 
+            "bias": "bool", 
+            "weights": "NoneType", 
+            "b_regularizer": "NoneType", 
+            "W_regularizer": "NoneType", 
+            "activity_regularizer": "NoneType", 
+            "border_mode": "str"
+        }, 
+        "defaults": {
+            "atrous_rate": [
+                1, 
+                1
+            ], 
+            "b_constraint": null, 
+            "activation": "linear", 
+            "W_constraint": null, 
+            "dim_ordering": "default", 
+            "subsample": [
+                1, 
+                1
+            ], 
+            "init": "glorot_uniform", 
+            "bias": true, 
+            "weights": null, 
+            "b_regularizer": null, 
+            "W_regularizer": null, 
+            "activity_regularizer": null, 
+            "border_mode": "valid"
+        }, 
+        "type": "keras.layers.convolutional"
+    }, 
+    {
+        "name": "AtrousConvolution2D", 
+        "baseType": "Convolution2D", 
+        "params": [
+            "nb_filter", 
+            "nb_row", 
+            "nb_col", 
+            "init", 
+            "activation", 
+            "weights", 
+            "border_mode", 
+            "subsample", 
+            "atrous_rate", 
+            "dim_ordering", 
+            "W_regularizer", 
+            "b_regularizer", 
+            "activity_regularizer", 
+            "W_constraint", 
+            "b_constraint", 
+            "bias"
+        ], 
+        "types": {
+            "atrous_rate": "tuple", 
+            "b_constraint": "NoneType", 
+            "activation": "str", 
+            "W_constraint": "NoneType", 
+            "dim_ordering": "str", 
+            "subsample": "tuple", 
+            "init": "str", 
+            "bias": "bool", 
+            "weights": "NoneType", 
+            "b_regularizer": "NoneType", 
+            "W_regularizer": "NoneType", 
+            "activity_regularizer": "NoneType", 
+            "border_mode": "str"
+        }, 
+        "defaults": {
+            "atrous_rate": [
+                1, 
+                1
+            ], 
+            "b_constraint": null, 
+            "activation": "linear", 
+            "W_constraint": null, 
+            "dim_ordering": "default", 
+            "subsample": [
+                1, 
+                1
+            ], 
+            "init": "glorot_uniform", 
+            "bias": true, 
+            "weights": null, 
+            "b_regularizer": null, 
+            "W_regularizer": null, 
+            "activity_regularizer": null, 
+            "border_mode": "valid"
+        }, 
+        "type": "keras.layers.convolutional"
+    }, 
+    {
+        "name": "AveragePooling1D", 
+        "baseType": "_Pooling1D", 
+        "params": [
+            "pool_length", 
+            "stride", 
+            "border_mode"
+        ], 
+        "types": {
+            "stride": "NoneType", 
+            "pool_length": "int", 
+            "border_mode": "str"
+        }, 
+        "defaults": {
+            "stride": null, 
+            "pool_length": 2, 
+            "border_mode": "valid"
+        }, 
+        "type": "keras.layers.pooling"
+    }, 
+    {
+        "name": "AveragePooling2D", 
+        "baseType": "_Pooling2D", 
+        "params": [
+            "pool_size", 
+            "strides", 
+            "border_mode", 
+            "dim_ordering"
+        ], 
+        "types": {
+            "strides": "NoneType", 
+            "border_mode": "str", 
+            "dim_ordering": "str", 
+            "pool_size": "tuple"
+        }, 
+        "defaults": {
+            "strides": null, 
+            "border_mode": "valid", 
+            "dim_ordering": "default", 
+            "pool_size": [
+                2, 
+                2
+            ]
+        }, 
+        "type": "keras.layers.pooling"
+    }, 
+    {
+        "name": "AveragePooling3D", 
+        "baseType": "_Pooling3D", 
+        "params": [
+            "pool_size", 
+            "strides", 
+            "border_mode", 
+            "dim_ordering"
+        ], 
+        "types": {
+            "strides": "NoneType", 
+            "border_mode": "str", 
+            "dim_ordering": "str", 
+            "pool_size": "tuple"
+        }, 
+        "defaults": {
+            "strides": null, 
+            "border_mode": "valid", 
+            "dim_ordering": "default", 
+            "pool_size": [
+                2, 
+                2, 
+                2
+            ]
+        }, 
+        "type": "keras.layers.pooling"
+    }, 
+    {
+        "name": "BatchNormalization", 
+        "baseType": "Layer", 
+        "params": [
+            "epsilon", 
+            "mode", 
+            "axis", 
+            "momentum", 
+            "weights", 
+            "beta_init", 
+            "gamma_init"
+        ], 
+        "types": {
+            "beta_init": "str", 
+            "epsilon": "float", 
+            "gamma_init": "str", 
+            "weights": "NoneType", 
+            "mode": "int", 
+            "momentum": "float", 
+            "axis": "int"
+        }, 
+        "defaults": {
+            "beta_init": "zero", 
+            "epsilon": 1e-06, 
+            "gamma_init": "one", 
+            "weights": null, 
+            "mode": 0, 
+            "momentum": 0.99, 
+            "axis": -1
+        }, 
+        "type": "keras.layers.normalization"
+    }, 
+    {
+        "name": "Convolution1D", 
+        "baseType": "Layer", 
+        "params": [
+            "nb_filter", 
+            "filter_length", 
+            "init", 
+            "activation", 
+            "weights", 
+            "border_mode", 
+            "subsample_length", 
+            "W_regularizer", 
+            "b_regularizer", 
+            "activity_regularizer", 
+            "W_constraint", 
+            "b_constraint", 
+            "bias", 
+            "input_dim", 
+            "input_length"
+        ], 
+        "types": {
+            "input_length": "NoneType", 
+            "b_constraint": "NoneType", 
+            "activation": "str", 
+            "W_constraint": "NoneType", 
+            "init": "str", 
+            "bias": "bool", 
+            "weights": "NoneType", 
+            "input_dim": "NoneType", 
+            "subsample_length": "int", 
+            "b_regularizer": "NoneType", 
+            "W_regularizer": "NoneType", 
+            "activity_regularizer": "NoneType", 
+            "border_mode": "str"
+        }, 
+        "defaults": {
+            "input_length": null, 
+            "b_constraint": null, 
+            "activation": "linear", 
+            "W_constraint": null, 
+            "init": "uniform", 
+            "bias": true, 
+            "weights": null, 
+            "input_dim": null, 
+            "subsample_length": 1, 
+            "b_regularizer": null, 
+            "W_regularizer": null, 
+            "activity_regularizer": null, 
+            "border_mode": "valid"
+        }, 
+        "type": "keras.layers.convolutional"
+    }, 
+    {
+        "name": "Convolution2D", 
+        "baseType": "Layer", 
+        "params": [
+            "nb_filter", 
+            "nb_row", 
+            "nb_col", 
+            "init", 
+            "activation", 
+            "weights", 
+            "border_mode", 
+            "subsample", 
+            "dim_ordering", 
+            "W_regularizer", 
+            "b_regularizer", 
+            "activity_regularizer", 
+            "W_constraint", 
+            "b_constraint", 
+            "bias"
+        ], 
+        "types": {
+            "b_constraint": "NoneType", 
+            "activation": "str", 
+            "W_constraint": "NoneType", 
+            "dim_ordering": "str", 
+            "subsample": "tuple", 
+            "init": "str", 
+            "bias": "bool", 
+            "weights": "NoneType", 
+            "b_regularizer": "NoneType", 
+            "W_regularizer": "NoneType", 
+            "activity_regularizer": "NoneType", 
+            "border_mode": "str"
+        }, 
+        "defaults": {
+            "b_constraint": null, 
+            "activation": "linear", 
+            "W_constraint": null, 
+            "dim_ordering": "default", 
+            "subsample": [
+                1, 
+                1
+            ], 
+            "init": "glorot_uniform", 
+            "bias": true, 
+            "weights": null, 
+            "b_regularizer": null, 
+            "W_regularizer": null, 
+            "activity_regularizer": null, 
+            "border_mode": "valid"
+        }, 
+        "type": "keras.layers.convolutional"
+    }, 
+    {
+        "name": "Convolution3D", 
+        "baseType": "Layer", 
+        "params": [
+            "nb_filter", 
+            "kernel_dim1", 
+            "kernel_dim2", 
+            "kernel_dim3", 
+            "init", 
+            "activation", 
+            "weights", 
+            "border_mode", 
+            "subsample", 
+            "dim_ordering", 
+            "W_regularizer", 
+            "b_regularizer", 
+            "activity_regularizer", 
+            "W_constraint", 
+            "b_constraint", 
+            "bias"
+        ], 
+        "types": {
+            "b_constraint": "NoneType", 
+            "activation": "str", 
+            "W_constraint": "NoneType", 
+            "dim_ordering": "str", 
+            "subsample": "tuple", 
+            "init": "str", 
+            "bias": "bool", 
+            "weights": "NoneType", 
+            "b_regularizer": "NoneType", 
+            "W_regularizer": "NoneType", 
+            "activity_regularizer": "NoneType", 
+            "border_mode": "str"
+        }, 
+        "defaults": {
+            "b_constraint": null, 
+            "activation": "linear", 
+            "W_constraint": null, 
+            "dim_ordering": "default", 
+            "subsample": [
+                1, 
+                1, 
+                1
+            ], 
+            "init": "glorot_uniform", 
+            "bias": true, 
+            "weights": null, 
+            "b_regularizer": null, 
+            "W_regularizer": null, 
+            "activity_regularizer": null, 
+            "border_mode": "valid"
+        }, 
+        "type": "keras.layers.convolutional"
+    }, 
+    {
+        "name": "Convolution1D", 
+        "baseType": "Layer", 
+        "params": [
+            "nb_filter", 
+            "filter_length", 
+            "init", 
+            "activation", 
+            "weights", 
+            "border_mode", 
+            "subsample_length", 
+            "W_regularizer", 
+            "b_regularizer", 
+            "activity_regularizer", 
+            "W_constraint", 
+            "b_constraint", 
+            "bias", 
+            "input_dim", 
+            "input_length"
+        ], 
+        "types": {
+            "input_length": "NoneType", 
+            "b_constraint": "NoneType", 
+            "activation": "str", 
+            "W_constraint": "NoneType", 
+            "init": "str", 
+            "bias": "bool", 
+            "weights": "NoneType", 
+            "input_dim": "NoneType", 
+            "subsample_length": "int", 
+            "b_regularizer": "NoneType", 
+            "W_regularizer": "NoneType", 
+            "activity_regularizer": "NoneType", 
+            "border_mode": "str"
+        }, 
+        "defaults": {
+            "input_length": null, 
+            "b_constraint": null, 
+            "activation": "linear", 
+            "W_constraint": null, 
+            "init": "uniform", 
+            "bias": true, 
+            "weights": null, 
+            "input_dim": null, 
+            "subsample_length": 1, 
+            "b_regularizer": null, 
+            "W_regularizer": null, 
+            "activity_regularizer": null, 
+            "border_mode": "valid"
+        }, 
+        "type": "keras.layers.convolutional"
+    }, 
+    {
+        "name": "Convolution2D", 
+        "baseType": "Layer", 
+        "params": [
+            "nb_filter", 
+            "nb_row", 
+            "nb_col", 
+            "init", 
+            "activation", 
+            "weights", 
+            "border_mode", 
+            "subsample", 
+            "dim_ordering", 
+            "W_regularizer", 
+            "b_regularizer", 
+            "activity_regularizer", 
+            "W_constraint", 
+            "b_constraint", 
+            "bias"
+        ], 
+        "types": {
+            "b_constraint": "NoneType", 
+            "activation": "str", 
+            "W_constraint": "NoneType", 
+            "dim_ordering": "str", 
+            "subsample": "tuple", 
+            "init": "str", 
+            "bias": "bool", 
+            "weights": "NoneType", 
+            "b_regularizer": "NoneType", 
+            "W_regularizer": "NoneType", 
+            "activity_regularizer": "NoneType", 
+            "border_mode": "str"
+        }, 
+        "defaults": {
+            "b_constraint": null, 
+            "activation": "linear", 
+            "W_constraint": null, 
+            "dim_ordering": "default", 
+            "subsample": [
+                1, 
+                1
+            ], 
+            "init": "glorot_uniform", 
+            "bias": true, 
+            "weights": null, 
+            "b_regularizer": null, 
+            "W_regularizer": null, 
+            "activity_regularizer": null, 
+            "border_mode": "valid"
+        }, 
+        "type": "keras.layers.convolutional"
+    }, 
+    {
+        "name": "Convolution3D", 
+        "baseType": "Layer", 
+        "params": [
+            "nb_filter", 
+            "kernel_dim1", 
+            "kernel_dim2", 
+            "kernel_dim3", 
+            "init", 
+            "activation", 
+            "weights", 
+            "border_mode", 
+            "subsample", 
+            "dim_ordering", 
+            "W_regularizer", 
+            "b_regularizer", 
+            "activity_regularizer", 
+            "W_constraint", 
+            "b_constraint", 
+            "bias"
+        ], 
+        "types": {
+            "b_constraint": "NoneType", 
+            "activation": "str", 
+            "W_constraint": "NoneType", 
+            "dim_ordering": "str", 
+            "subsample": "tuple", 
+            "init": "str", 
+            "bias": "bool", 
+            "weights": "NoneType", 
+            "b_regularizer": "NoneType", 
+            "W_regularizer": "NoneType", 
+            "activity_regularizer": "NoneType", 
+            "border_mode": "str"
+        }, 
+        "defaults": {
+            "b_constraint": null, 
+            "activation": "linear", 
+            "W_constraint": null, 
+            "dim_ordering": "default", 
+            "subsample": [
+                1, 
+                1, 
+                1
+            ], 
+            "init": "glorot_uniform", 
+            "bias": true, 
+            "weights": null, 
+            "b_regularizer": null, 
+            "W_regularizer": null, 
+            "activity_regularizer": null, 
+            "border_mode": "valid"
+        }, 
+        "type": "keras.layers.convolutional"
+    }, 
+    {
+        "name": "Deconvolution2D", 
+        "baseType": "Convolution2D", 
+        "params": [
+            "nb_filter", 
+            "nb_row", 
+            "nb_col", 
+            "output_shape", 
+            "init", 
+            "activation", 
+            "weights", 
+            "border_mode", 
+            "subsample", 
+            "dim_ordering", 
+            "W_regularizer", 
+            "b_regularizer", 
+            "activity_regularizer", 
+            "W_constraint", 
+            "b_constraint", 
+            "bias"
+        ], 
+        "types": {
+            "b_constraint": "NoneType", 
+            "activation": "str", 
+            "W_constraint": "NoneType", 
+            "dim_ordering": "str", 
+            "subsample": "tuple", 
+            "init": "str", 
+            "bias": "bool", 
+            "weights": "NoneType", 
+            "b_regularizer": "NoneType", 
+            "W_regularizer": "NoneType", 
+            "activity_regularizer": "NoneType", 
+            "border_mode": "str"
+        }, 
+        "defaults": {
+            "b_constraint": null, 
+            "activation": "linear", 
+            "W_constraint": null, 
+            "dim_ordering": "th", 
+            "subsample": [
+                1, 
+                1
+            ], 
+            "init": "glorot_uniform", 
+            "bias": true, 
+            "weights": null, 
+            "b_regularizer": null, 
+            "W_regularizer": null, 
+            "activity_regularizer": null, 
+            "border_mode": "valid"
+        }, 
+        "type": "keras.layers.convolutional"
+    }, 
+    {
+        "name": "Deconvolution2D", 
+        "baseType": "Convolution2D", 
+        "params": [
+            "nb_filter", 
+            "nb_row", 
+            "nb_col", 
+            "output_shape", 
+            "init", 
+            "activation", 
+            "weights", 
+            "border_mode", 
+            "subsample", 
+            "dim_ordering", 
+            "W_regularizer", 
+            "b_regularizer", 
+            "activity_regularizer", 
+            "W_constraint", 
+            "b_constraint", 
+            "bias"
+        ], 
+        "types": {
+            "b_constraint": "NoneType", 
+            "activation": "str", 
+            "W_constraint": "NoneType", 
+            "dim_ordering": "str", 
+            "subsample": "tuple", 
+            "init": "str", 
+            "bias": "bool", 
+            "weights": "NoneType", 
+            "b_regularizer": "NoneType", 
+            "W_regularizer": "NoneType", 
+            "activity_regularizer": "NoneType", 
+            "border_mode": "str"
+        }, 
+        "defaults": {
+            "b_constraint": null, 
+            "activation": "linear", 
+            "W_constraint": null, 
+            "dim_ordering": "th", 
+            "subsample": [
+                1, 
+                1
+            ], 
+            "init": "glorot_uniform", 
+            "bias": true, 
+            "weights": null, 
+            "b_regularizer": null, 
+            "W_regularizer": null, 
+            "activity_regularizer": null, 
+            "border_mode": "valid"
+        }, 
+        "type": "keras.layers.convolutional"
+    }, 
+    {
+        "name": "Dense", 
+        "baseType": "Layer", 
+        "params": [
+            "output_dim", 
+            "init", 
+            "activation", 
+            "weights", 
+            "W_regularizer", 
+            "b_regularizer", 
+            "activity_regularizer", 
+            "W_constraint", 
+            "b_constraint", 
+            "bias", 
+            "input_dim"
+        ], 
+        "types": {
+            "b_constraint": "NoneType", 
+            "activity_regularizer": "NoneType", 
+            "W_constraint": "NoneType", 
+            "init": "str", 
+            "bias": "bool", 
+            "weights": "NoneType", 
+            "input_dim": "NoneType", 
+            "b_regularizer": "NoneType", 
+            "W_regularizer": "NoneType", 
+            "activation": "str"
+        }, 
+        "defaults": {
+            "b_constraint": null, 
+            "activity_regularizer": null, 
+            "W_constraint": null, 
+            "init": "glorot_uniform", 
+            "bias": true, 
+            "weights": null, 
+            "input_dim": null, 
+            "b_regularizer": null, 
+            "W_regularizer": null, 
+            "activation": "linear"
+        }, 
+        "type": "keras.layers.core"
+    }, 
+    {
+        "name": "Dropout", 
+        "baseType": "Layer", 
+        "params": [
+            "p"
+        ], 
+        "types": {}, 
+        "defaults": {}, 
+        "type": "keras.layers.core"
+    }, 
+    {
+        "name": "ELU", 
+        "baseType": "Layer", 
+        "params": [
+            "alpha"
+        ], 
+        "types": {
+            "alpha": "float"
+        }, 
+        "defaults": {
+            "alpha": 1.0
+        }, 
+        "type": "keras.layers.advanced_activations"
+    }, 
+    {
+        "name": "Embedding", 
+        "baseType": "Layer", 
+        "params": [
+            "input_dim", 
+            "output_dim", 
+            "init", 
+            "input_length", 
+            "W_regularizer", 
+            "activity_regularizer", 
+            "W_constraint", 
+            "mask_zero", 
+            "weights", 
+            "dropout"
+        ], 
+        "types": {
+            "activity_regularizer": "NoneType", 
+            "W_constraint": "NoneType", 
+            "init": "str", 
+            "weights": "NoneType", 
+            "mask_zero": "bool", 
+            "W_regularizer": "NoneType", 
+            "dropout": "float", 
+            "input_length": "NoneType"
+        }, 
+        "defaults": {
+            "activity_regularizer": null, 
+            "W_constraint": null, 
+            "init": "uniform", 
+            "weights": null, 
+            "mask_zero": false, 
+            "W_regularizer": null, 
+            "dropout": 0.0, 
+            "input_length": null
+        }, 
+        "type": "keras.layers.embeddings"
+    }, 
+    {
+        "name": "Flatten", 
+        "baseType": "Layer", 
+        "params": [], 
+        "types": {}, 
+        "defaults": {}, 
+        "type": "keras.layers.core"
+    }, 
+    {
+        "name": "GRU", 
+        "baseType": "Recurrent", 
+        "params": [
+            "output_dim", 
+            "init", 
+            "inner_init", 
+            "activation", 
+            "inner_activation", 
+            "W_regularizer", 
+            "U_regularizer", 
+            "b_regularizer", 
+            "dropout_W", 
+            "dropout_U"
+        ], 
+        "types": {
+            "U_regularizer": "NoneType", 
+            "inner_activation": "str", 
+            "activation": "str", 
+            "init": "str", 
+            "inner_init": "str", 
+            "dropout_U": "float", 
+            "dropout_W": "float", 
+            "b_regularizer": "NoneType", 
+            "W_regularizer": "NoneType"
+        }, 
+        "defaults": {
+            "U_regularizer": null, 
+            "inner_activation": "hard_sigmoid", 
+            "activation": "tanh", 
+            "init": "glorot_uniform", 
+            "inner_init": "orthogonal", 
+            "dropout_U": 0.0, 
+            "dropout_W": 0.0, 
+            "b_regularizer": null, 
+            "W_regularizer": null
+        }, 
+        "type": "keras.layers.recurrent"
+    }, 
+    {
+        "name": "GaussianDropout", 
+        "baseType": "Layer", 
+        "params": [
+            "p"
+        ], 
+        "types": {}, 
+        "defaults": {}, 
+        "type": "keras.layers.noise"
+    }, 
+    {
+        "name": "GaussianNoise", 
+        "baseType": "Layer", 
+        "params": [
+            "sigma"
+        ], 
+        "types": {}, 
+        "defaults": {}, 
+        "type": "keras.layers.noise"
+    }, 
+    {
+        "name": "Highway", 
+        "baseType": "Layer", 
+        "params": [
+            "init", 
+            "transform_bias", 
+            "activation", 
+            "weights", 
+            "W_regularizer", 
+            "b_regularizer", 
+            "activity_regularizer", 
+            "W_constraint", 
+            "b_constraint", 
+            "bias", 
+            "input_dim"
+        ], 
+        "types": {
+            "b_constraint": "NoneType", 
+            "transform_bias": "int", 
+            "activation": "str", 
+            "W_constraint": "NoneType", 
+            "init": "str", 
+            "bias": "bool", 
+            "weights": "NoneType", 
+            "input_dim": "NoneType", 
+            "b_regularizer": "NoneType", 
+            "W_regularizer": "NoneType", 
+            "activity_regularizer": "NoneType"
+        }, 
+        "defaults": {
+            "b_constraint": null, 
+            "transform_bias": -2, 
+            "activation": "linear", 
+            "W_constraint": null, 
+            "init": "glorot_uniform", 
+            "bias": true, 
+            "weights": null, 
+            "input_dim": null, 
+            "b_regularizer": null, 
+            "W_regularizer": null, 
+            "activity_regularizer": null
+        }, 
+        "type": "keras.layers.core"
+    }, 
+    {
+        "name": "InputLayer", 
+        "baseType": "Layer", 
+        "params": [
+            "input_shape", 
+            "batch_input_shape", 
+            "input_dtype", 
+            "input_tensor", 
+            "name"
+        ], 
+        "types": {
+            "batch_input_shape": "NoneType", 
+            "input_tensor": "NoneType", 
+            "input_shape": "NoneType", 
+            "input_dtype": "NoneType", 
+            "name": "NoneType"
+        }, 
+        "defaults": {
+            "batch_input_shape": null, 
+            "input_tensor": null, 
+            "input_shape": null, 
+            "input_dtype": null, 
+            "name": null
+        }, 
+        "type": "keras.engine.topology"
+    }, 
+    {
+        "name": "InputSpec", 
+        "baseType": "object", 
+        "params": [
+            "dtype", 
+            "shape", 
+            "ndim"
+        ], 
+        "types": {
+            "ndim": "NoneType", 
+            "dtype": "NoneType", 
+            "shape": "NoneType"
+        }, 
+        "defaults": {
+            "ndim": null, 
+            "dtype": null, 
+            "shape": null
+        }, 
+        "type": "keras.engine.topology"
+    }, 
+    {
+        "name": "LSTM", 
+        "baseType": "Recurrent", 
+        "params": [
+            "output_dim", 
+            "init", 
+            "inner_init", 
+            "forget_bias_init", 
+            "activation", 
+            "inner_activation", 
+            "W_regularizer", 
+            "U_regularizer", 
+            "b_regularizer", 
+            "dropout_W", 
+            "dropout_U"
+        ], 
+        "types": {
+            "U_regularizer": "NoneType", 
+            "inner_activation": "str", 
+            "activation": "str", 
+            "init": "str", 
+            "inner_init": "str", 
+            "dropout_U": "float", 
+            "dropout_W": "float", 
+            "b_regularizer": "NoneType", 
+            "W_regularizer": "NoneType", 
+            "forget_bias_init": "str"
+        }, 
+        "defaults": {
+            "U_regularizer": null, 
+            "inner_activation": "hard_sigmoid", 
+            "activation": "tanh", 
+            "init": "glorot_uniform", 
+            "inner_init": "orthogonal", 
+            "dropout_U": 0.0, 
+            "dropout_W": 0.0, 
+            "b_regularizer": null, 
+            "W_regularizer": null, 
+            "forget_bias_init": "one"
+        }, 
+        "type": "keras.layers.recurrent"
+    }, 
+    {
+        "name": "Lambda", 
+        "baseType": "Layer", 
+        "params": [
+            "function", 
+            "output_shape", 
+            "arguments"
+        ], 
+        "types": {
+            "output_shape": "NoneType", 
+            "arguments": "dict"
+        }, 
+        "defaults": {
+            "output_shape": null, 
+            "arguments": {}
+        }, 
+        "type": "keras.layers.core"
+    }, 
+    {
+        "name": "Layer", 
+        "baseType": "object", 
+        "params": [], 
+        "types": {}, 
+        "defaults": {}, 
+        "type": "keras.engine.topology"
+    }, 
+    {
+        "name": "LeakyReLU", 
+        "baseType": "Layer", 
+        "params": [
+            "alpha"
+        ], 
+        "types": {
+            "alpha": "float"
+        }, 
+        "defaults": {
+            "alpha": 0.3
+        }, 
+        "type": "keras.layers.advanced_activations"
+    }, 
+    {
+        "name": "LocallyConnected1D", 
+        "baseType": "Layer", 
+        "params": [
+            "nb_filter", 
+            "filter_length", 
+            "init", 
+            "activation", 
+            "weights", 
+            "border_mode", 
+            "subsample_length", 
+            "W_regularizer", 
+            "b_regularizer", 
+            "activity_regularizer", 
+            "W_constraint", 
+            "b_constraint", 
+            "bias", 
+            "input_dim", 
+            "input_length"
+        ], 
+        "types": {
+            "input_length": "NoneType", 
+            "b_constraint": "NoneType", 
+            "activation": "str", 
+            "W_constraint": "NoneType", 
+            "init": "str", 
+            "bias": "bool", 
+            "weights": "NoneType", 
+            "input_dim": "NoneType", 
+            "subsample_length": "int", 
+            "b_regularizer": "NoneType", 
+            "W_regularizer": "NoneType", 
+            "activity_regularizer": "NoneType", 
+            "border_mode": "str"
+        }, 
+        "defaults": {
+            "input_length": null, 
+            "b_constraint": null, 
+            "activation": "linear", 
+            "W_constraint": null, 
+            "init": "uniform", 
+            "bias": true, 
+            "weights": null, 
+            "input_dim": null, 
+            "subsample_length": 1, 
+            "b_regularizer": null, 
+            "W_regularizer": null, 
+            "activity_regularizer": null, 
+            "border_mode": "valid"
+        }, 
+        "type": "keras.layers.local"
+    }, 
+    {
+        "name": "LocallyConnected2D", 
+        "baseType": "Layer", 
+        "params": [
+            "nb_filter", 
+            "nb_row", 
+            "nb_col", 
+            "init", 
+            "activation", 
+            "weights", 
+            "border_mode", 
+            "subsample", 
+            "dim_ordering", 
+            "W_regularizer", 
+            "b_regularizer", 
+            "activity_regularizer", 
+            "W_constraint", 
+            "b_constraint", 
+            "bias"
+        ], 
+        "types": {
+            "b_constraint": "NoneType", 
+            "activation": "str", 
+            "W_constraint": "NoneType", 
+            "dim_ordering": "str", 
+            "subsample": "tuple", 
+            "init": "str", 
+            "bias": "bool", 
+            "weights": "NoneType", 
+            "b_regularizer": "NoneType", 
+            "W_regularizer": "NoneType", 
+            "activity_regularizer": "NoneType", 
+            "border_mode": "str"
+        }, 
+        "defaults": {
+            "b_constraint": null, 
+            "activation": "linear", 
+            "W_constraint": null, 
+            "dim_ordering": "default", 
+            "subsample": [
+                1, 
+                1
+            ], 
+            "init": "glorot_uniform", 
+            "bias": true, 
+            "weights": null, 
+            "b_regularizer": null, 
+            "W_regularizer": null, 
+            "activity_regularizer": null, 
+            "border_mode": "valid"
+        }, 
+        "type": "keras.layers.local"
+    }, 
+    {
+        "name": "Masking", 
+        "baseType": "Layer", 
+        "params": [
+            "mask_value"
+        ], 
+        "types": {
+            "mask_value": "float"
+        }, 
+        "defaults": {
+            "mask_value": 0.0
+        }, 
+        "type": "keras.layers.core"
+    }, 
+    {
+        "name": "MaxPooling1D", 
+        "baseType": "_Pooling1D", 
+        "params": [
+            "pool_length", 
+            "stride", 
+            "border_mode"
+        ], 
+        "types": {
+            "stride": "NoneType", 
+            "pool_length": "int", 
+            "border_mode": "str"
+        }, 
+        "defaults": {
+            "stride": null, 
+            "pool_length": 2, 
+            "border_mode": "valid"
+        }, 
+        "type": "keras.layers.pooling"
+    }, 
+    {
+        "name": "MaxPooling2D", 
+        "baseType": "_Pooling2D", 
+        "params": [
+            "pool_size", 
+            "strides", 
+            "border_mode", 
+            "dim_ordering"
+        ], 
+        "types": {
+            "strides": "NoneType", 
+            "border_mode": "str", 
+            "dim_ordering": "str", 
+            "pool_size": "tuple"
+        }, 
+        "defaults": {
+            "strides": null, 
+            "border_mode": "valid", 
+            "dim_ordering": "default", 
+            "pool_size": [
+                2, 
+                2
+            ]
+        }, 
+        "type": "keras.layers.pooling"
+    }, 
+    {
+        "name": "MaxPooling3D", 
+        "baseType": "_Pooling3D", 
+        "params": [
+            "pool_size", 
+            "strides", 
+            "border_mode", 
+            "dim_ordering"
+        ], 
+        "types": {
+            "strides": "NoneType", 
+            "border_mode": "str", 
+            "dim_ordering": "str", 
+            "pool_size": "tuple"
+        }, 
+        "defaults": {
+            "strides": null, 
+            "border_mode": "valid", 
+            "dim_ordering": "default", 
+            "pool_size": [
+                2, 
+                2, 
+                2
+            ]
+        }, 
+        "type": "keras.layers.pooling"
+    }, 
+    {
+        "name": "MaxoutDense", 
+        "baseType": "Layer", 
+        "params": [
+            "output_dim", 
+            "nb_feature", 
+            "init", 
+            "weights", 
+            "W_regularizer", 
+            "b_regularizer", 
+            "activity_regularizer", 
+            "W_constraint", 
+            "b_constraint", 
+            "bias", 
+            "input_dim"
+        ], 
+        "types": {
+            "b_constraint": "NoneType", 
+            "nb_feature": "int", 
+            "activity_regularizer": "NoneType", 
+            "W_constraint": "NoneType", 
+            "init": "str", 
+            "bias": "bool", 
+            "weights": "NoneType", 
+            "input_dim": "NoneType", 
+            "b_regularizer": "NoneType", 
+            "W_regularizer": "NoneType"
+        }, 
+        "defaults": {
+            "b_constraint": null, 
+            "nb_feature": 4, 
+            "activity_regularizer": null, 
+            "W_constraint": null, 
+            "init": "glorot_uniform", 
+            "bias": true, 
+            "weights": null, 
+            "input_dim": null, 
+            "b_regularizer": null, 
+            "W_regularizer": null
+        }, 
+        "type": "keras.layers.core"
+    }, 
+    {
+        "name": "Merge", 
+        "baseType": "Layer", 
+        "params": [
+            "layers", 
+            "mode", 
+            "concat_axis", 
+            "dot_axes", 
+            "output_shape", 
+            "output_mask", 
+            "node_indices", 
+            "tensor_indices", 
+            "name"
+        ], 
+        "types": {
+            "layers": "NoneType", 
+            "name": "NoneType", 
+            "concat_axis": "int", 
+            "dot_axes": "int", 
+            "tensor_indices": "NoneType", 
+            "mode": "str", 
+            "output_mask": "NoneType", 
+            "output_shape": "NoneType", 
+            "node_indices": "NoneType"
+        }, 
+        "defaults": {
+            "layers": null, 
+            "name": null, 
+            "concat_axis": -1, 
+            "dot_axes": -1, 
+            "tensor_indices": null, 
+            "mode": "sum", 
+            "output_mask": null, 
+            "output_shape": null, 
+            "node_indices": null
+        }, 
+        "type": "keras.engine.topology"
+    }, 
+    {
+        "name": "PReLU", 
+        "baseType": "Layer", 
+        "params": [
+            "init", 
+            "weights"
+        ], 
+        "types": {
+            "init": "str", 
+            "weights": "NoneType"
+        }, 
+        "defaults": {
+            "init": "zero", 
+            "weights": null
+        }, 
+        "type": "keras.layers.advanced_activations"
+    }, 
+    {
+        "name": "ParametricSoftplus", 
+        "baseType": "Layer", 
+        "params": [
+            "alpha_init", 
+            "beta_init", 
+            "weights"
+        ], 
+        "types": {
+            "beta_init": "float", 
+            "weights": "NoneType", 
+            "alpha_init": "float"
+        }, 
+        "defaults": {
+            "beta_init": 5.0, 
+            "weights": null, 
+            "alpha_init": 0.2
+        }, 
+        "type": "keras.layers.advanced_activations"
+    }, 
+    {
+        "name": "Permute", 
+        "baseType": "Layer", 
+        "params": [
+            "dims"
+        ], 
+        "types": {}, 
+        "defaults": {}, 
+        "type": "keras.layers.core"
+    }, 
+    {
+        "name": "Recurrent", 
+        "baseType": "Layer", 
+        "params": [
+            "weights", 
+            "return_sequences", 
+            "go_backwards", 
+            "stateful", 
+            "unroll", 
+            "consume_less", 
+            "input_dim", 
+            "input_length"
+        ], 
+        "types": {
+            "input_dim": "NoneType", 
+            "go_backwards": "bool", 
+            "stateful": "bool", 
+            "unroll": "bool", 
+            "weights": "NoneType", 
+            "consume_less": "str", 
+            "return_sequences": "bool", 
+            "input_length": "NoneType"
+        }, 
+        "defaults": {
+            "input_dim": null, 
+            "go_backwards": false, 
+            "stateful": false, 
+            "unroll": false, 
+            "weights": null, 
+            "consume_less": "cpu", 
+            "return_sequences": false, 
+            "input_length": null
+        }, 
+        "type": "keras.layers.recurrent"
+    }, 
+    {
+        "name": "RepeatVector", 
+        "baseType": "Layer", 
+        "params": [
+            "n"
+        ], 
+        "types": {}, 
+        "defaults": {}, 
+        "type": "keras.layers.core"
+    }, 
+    {
+        "name": "Reshape", 
+        "baseType": "Layer", 
+        "params": [
+            "target_shape"
+        ], 
+        "types": {}, 
+        "defaults": {}, 
+        "type": "keras.layers.core"
+    }, 
+    {
+        "name": "SReLU", 
+        "baseType": "Layer", 
+        "params": [
+            "t_left_init", 
+            "a_left_init", 
+            "t_right_init", 
+            "a_right_init"
+        ], 
+        "types": {
+            "a_right_init": "str", 
+            "t_right_init": "str", 
+            "t_left_init": "str", 
+            "a_left_init": "str"
+        }, 
+        "defaults": {
+            "a_right_init": "one", 
+            "t_right_init": "glorot_uniform", 
+            "t_left_init": "zero", 
+            "a_left_init": "glorot_uniform"
+        }, 
+        "type": "keras.layers.advanced_activations"
+    }, 
+    {
+        "name": "SeparableConvolution2D", 
+        "baseType": "Layer", 
+        "params": [
+            "nb_filter", 
+            "nb_row", 
+            "nb_col", 
+            "init", 
+            "activation", 
+            "weights", 
+            "border_mode", 
+            "subsample", 
+            "depth_multiplier", 
+            "dim_ordering", 
+            "depthwise_regularizer", 
+            "pointwise_regularizer", 
+            "b_regularizer", 
+            "activity_regularizer", 
+            "depthwise_constraint", 
+            "pointwise_constraint", 
+            "b_constraint", 
+            "bias"
+        ], 
+        "types": {
+            "depthwise_constraint": "NoneType", 
+            "b_constraint": "NoneType", 
+            "activation": "str", 
+            "depth_multiplier": "int", 
+            "pointwise_constraint": "NoneType", 
+            "dim_ordering": "str", 
+            "pointwise_regularizer": "NoneType", 
+            "subsample": "tuple", 
+            "init": "str", 
+            "bias": "bool", 
+            "weights": "NoneType", 
+            "b_regularizer": "NoneType", 
+            "depthwise_regularizer": "NoneType", 
+            "activity_regularizer": "NoneType", 
+            "border_mode": "str"
+        }, 
+        "defaults": {
+            "depthwise_constraint": null, 
+            "b_constraint": null, 
+            "activation": "linear", 
+            "depth_multiplier": 1, 
+            "pointwise_constraint": null, 
+            "dim_ordering": "default", 
+            "pointwise_regularizer": null, 
+            "subsample": [
+                1, 
+                1
+            ], 
+            "init": "glorot_uniform", 
+            "bias": true, 
+            "weights": null, 
+            "b_regularizer": null, 
+            "depthwise_regularizer": null, 
+            "activity_regularizer": null, 
+            "border_mode": "valid"
+        }, 
+        "type": "keras.layers.convolutional"
+    }, 
+    {
+        "name": "SeparableConvolution2D", 
+        "baseType": "Layer", 
+        "params": [
+            "nb_filter", 
+            "nb_row", 
+            "nb_col", 
+            "init", 
+            "activation", 
+            "weights", 
+            "border_mode", 
+            "subsample", 
+            "depth_multiplier", 
+            "dim_ordering", 
+            "depthwise_regularizer", 
+            "pointwise_regularizer", 
+            "b_regularizer", 
+            "activity_regularizer", 
+            "depthwise_constraint", 
+            "pointwise_constraint", 
+            "b_constraint", 
+            "bias"
+        ], 
+        "types": {
+            "depthwise_constraint": "NoneType", 
+            "b_constraint": "NoneType", 
+            "activation": "str", 
+            "depth_multiplier": "int", 
+            "pointwise_constraint": "NoneType", 
+            "dim_ordering": "str", 
+            "pointwise_regularizer": "NoneType", 
+            "subsample": "tuple", 
+            "init": "str", 
+            "bias": "bool", 
+            "weights": "NoneType", 
+            "b_regularizer": "NoneType", 
+            "depthwise_regularizer": "NoneType", 
+            "activity_regularizer": "NoneType", 
+            "border_mode": "str"
+        }, 
+        "defaults": {
+            "depthwise_constraint": null, 
+            "b_constraint": null, 
+            "activation": "linear", 
+            "depth_multiplier": 1, 
+            "pointwise_constraint": null, 
+            "dim_ordering": "default", 
+            "pointwise_regularizer": null, 
+            "subsample": [
+                1, 
+                1
+            ], 
+            "init": "glorot_uniform", 
+            "bias": true, 
+            "weights": null, 
+            "b_regularizer": null, 
+            "depthwise_regularizer": null, 
+            "activity_regularizer": null, 
+            "border_mode": "valid"
+        }, 
+        "type": "keras.layers.convolutional"
+    }, 
+    {
+        "name": "SimpleRNN", 
+        "baseType": "Recurrent", 
+        "params": [
+            "output_dim", 
+            "init", 
+            "inner_init", 
+            "activation", 
+            "W_regularizer", 
+            "U_regularizer", 
+            "b_regularizer", 
+            "dropout_W", 
+            "dropout_U"
+        ], 
+        "types": {
+            "U_regularizer": "NoneType", 
+            "activation": "str", 
+            "init": "str", 
+            "inner_init": "str", 
+            "dropout_U": "float", 
+            "dropout_W": "float", 
+            "b_regularizer": "NoneType", 
+            "W_regularizer": "NoneType"
+        }, 
+        "defaults": {
+            "U_regularizer": null, 
+            "activation": "tanh", 
+            "init": "glorot_uniform", 
+            "inner_init": "orthogonal", 
+            "dropout_U": 0.0, 
+            "dropout_W": 0.0, 
+            "b_regularizer": null, 
+            "W_regularizer": null
+        }, 
+        "type": "keras.layers.recurrent"
+    }, 
+    {
+        "name": "ThresholdedReLU", 
+        "baseType": "Layer", 
+        "params": [
+            "theta"
+        ], 
+        "types": {
+            "theta": "float"
+        }, 
+        "defaults": {
+            "theta": 1.0
+        }, 
+        "type": "keras.layers.advanced_activations"
+    }, 
+    {
+        "name": "TimeDistributed", 
+        "baseType": "Wrapper", 
+        "params": [
+            "layer"
+        ], 
+        "types": {}, 
+        "defaults": {}, 
+        "type": "keras.layers.wrappers"
+    }, 
+    {
+        "name": "TimeDistributedDense", 
+        "baseType": "Layer", 
+        "params": [
+            "output_dim", 
+            "init", 
+            "activation", 
+            "weights", 
+            "W_regularizer", 
+            "b_regularizer", 
+            "activity_regularizer", 
+            "W_constraint", 
+            "b_constraint", 
+            "bias", 
+            "input_dim", 
+            "input_length"
+        ], 
+        "types": {
+            "b_constraint": "NoneType", 
+            "activity_regularizer": "NoneType", 
+            "W_constraint": "NoneType", 
+            "init": "str", 
+            "bias": "bool", 
+            "weights": "NoneType", 
+            "input_dim": "NoneType", 
+            "b_regularizer": "NoneType", 
+            "W_regularizer": "NoneType", 
+            "activation": "str", 
+            "input_length": "NoneType"
+        }, 
+        "defaults": {
+            "b_constraint": null, 
+            "activity_regularizer": null, 
+            "W_constraint": null, 
+            "init": "glorot_uniform", 
+            "bias": true, 
+            "weights": null, 
+            "input_dim": null, 
+            "b_regularizer": null, 
+            "W_regularizer": null, 
+            "activation": "linear", 
+            "input_length": null
+        }, 
+        "type": "keras.layers.core"
+    }, 
+    {
+        "name": "UpSampling1D", 
+        "baseType": "Layer", 
+        "params": [
+            "length"
+        ], 
+        "types": {
+            "length": "int"
+        }, 
+        "defaults": {
+            "length": 2
+        }, 
+        "type": "keras.layers.convolutional"
+    }, 
+    {
+        "name": "UpSampling2D", 
+        "baseType": "Layer", 
+        "params": [
+            "size", 
+            "dim_ordering"
+        ], 
+        "types": {
+            "dim_ordering": "str", 
+            "size": "tuple"
+        }, 
+        "defaults": {
+            "dim_ordering": "default", 
+            "size": [
+                2, 
+                2
+            ]
+        }, 
+        "type": "keras.layers.convolutional"
+    }, 
+    {
+        "name": "UpSampling3D", 
+        "baseType": "Layer", 
+        "params": [
+            "size", 
+            "dim_ordering"
+        ], 
+        "types": {
+            "dim_ordering": "str", 
+            "size": "tuple"
+        }, 
+        "defaults": {
+            "dim_ordering": "default", 
+            "size": [
+                2, 
+                2, 
+                2
+            ]
+        }, 
+        "type": "keras.layers.convolutional"
+    }, 
+    {
+        "name": "Wrapper", 
+        "baseType": "Layer", 
+        "params": [
+            "layer"
+        ], 
+        "types": {}, 
+        "defaults": {}, 
+        "type": "keras.layers.wrappers"
+    }, 
+    {
+        "name": "ZeroPadding1D", 
+        "baseType": "Layer", 
+        "params": [
+            "padding"
+        ], 
+        "types": {
+            "padding": "int"
+        }, 
+        "defaults": {
+            "padding": 1
+        }, 
+        "type": "keras.layers.convolutional"
+    }, 
+    {
+        "name": "ZeroPadding2D", 
+        "baseType": "Layer", 
+        "params": [
+            "padding", 
+            "dim_ordering"
+        ], 
+        "types": {
+            "padding": "tuple", 
+            "dim_ordering": "str"
+        }, 
+        "defaults": {
+            "padding": [
+                1, 
+                1
+            ], 
+            "dim_ordering": "default"
+        }, 
+        "type": "keras.layers.convolutional"
+    }, 
+    {
+        "name": "ZeroPadding3D", 
+        "baseType": "Layer", 
+        "params": [
+            "padding", 
+            "dim_ordering"
+        ], 
+        "types": {
+            "padding": "tuple", 
+            "dim_ordering": "str"
+        }, 
+        "defaults": {
+            "padding": [
+                1, 
+                1, 
+                1
+            ], 
+            "dim_ordering": "default"
+        }, 
+        "type": "keras.layers.convolutional"
+    }
+]
