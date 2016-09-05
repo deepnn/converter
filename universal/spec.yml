@@ -6,7 +6,7 @@
 name: Convolution
 attrs:
     - name: dimension
-      description: The dimensionality of the unpooling (ie, D, D or D)
+      description: The dimensionality of the convolution (ie, 1D, 2D or 3D etc...)
       type: integer
 
     - name: n_filters
