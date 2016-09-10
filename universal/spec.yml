@@ -2,7 +2,7 @@
 #
 # Warning: This is a work in progress and not yet complete
 
-# Convolution
+# Convolution layer
 name: Convolution
 attrs:
     - name: dimension
@@ -39,5 +39,33 @@ attrs:
 
     - name: input_dim
       description: input dimension for user supplied dimension. 
-      type: ndarray 
-    
+      type: tuple 
+
+# Dense layer
+name: Dense
+attrs:
+    - name: input_dim
+      description:the input dimensionality 
+      type:tuple
+
+    - name: num_units # similar to output_dim
+      description: the number of neurons in the dense layer
+      type: integer
+
+    - name: init
+      description: weights initialization type
+      type: string
+
+# Activation layer
+# This is a generic activation layer that translates in to most of the activation types
+name: Activation
+attrs:
+    - name: activation
+      description: the name of the activation type
+      type: string
+
+    - name: kwargs
+      description: other arguments to advanced activations such as PRLeU
+      type: dict
+
+
