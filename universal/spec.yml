@@ -1,8 +1,6 @@
 # This contains a generic cross-platform spec for deep learning
 #
 # Warning: This is a work in progress and not yet complete
-
-# Convolution
 name: Convolution
 attrs:
     - name: dimension
@@ -41,3 +39,27 @@ attrs:
       description: input dimension for user supplied dimension. 
       type: ndarray 
     
+name: Unpooling
+attrs:
+    - name: dimension
+      description: The dimensionality of the unpooling (ie, 1D, 2D or 3D)
+      type: integer
+
+    - name: kernel
+      description: Size of the kernel. In a 2D unpooling layer, this will be width and height.
+      type: tuple
+
+name: Pooling
+attrs:
+    - name: dimension
+      description: The dimensionality of the pooling (ie, 1D, 2D or 3D)
+      type: integer
+
+    - name: type
+      description: Type of pooling to perform. For example, Max or Average.
+      type: enum
+
+    - name: kernel
+      description: Size of the kernel. In a 2D pooling layer, this will be width and height.
+      type: tuple
+
