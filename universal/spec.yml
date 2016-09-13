@@ -1,6 +1,44 @@
 # This contains a generic cross-platform spec for deep learning
 #
 # Warning: This is a work in progress and not yet complete
+name: Convolution
+attrs:
+    - name: dimension
+      description: The dimensionality of the convolution (ie, 1D, 2D or 3D etc...)
+      type: integer
+
+    - name: n_filters
+      description: number of filters.
+      type: integer
+
+    - name: kernel
+      description: Size of the kernel in each axis. In a 2D convolution layer, this will be (Kx,Ky).
+      type: tuple
+    
+    - name: stride
+      description: the stride size in each axis. In a 2D convolution layer, this will be (sx, sy).
+      type: tuple
+
+    - name: pad
+      description: padding size, if any, in each axis. In 2D case this will be (pdx, pdy).
+      type: tuple
+
+    - name: flip_filters
+      description: Whether to flip the filters.
+      type: boolean
+
+    - name: init
+      description: weights initialization type.
+      type: string
+
+    - name: border_mode
+      description: mode flag that indicates to keep dims same or valid.
+      type: string
+
+    - name: input_dim
+      description: input dimension for user supplied dimension. 
+      type: ndarray 
+    
 name: Unpooling
 attrs:
     - name: dimension
@@ -24,3 +62,4 @@ attrs:
     - name: kernel
       description: Size of the kernel. In a 2D pooling layer, this will be width and height.
       type: tuple
+
