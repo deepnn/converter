@@ -62,7 +62,17 @@ name: Activation
 attrs:
     - name: activation
       description: the name of the activation type
-      type: string
+      type: enum
+      values:
+          - HardShrink
+          - HardTanh
+          - Sigmoid
+          - SoftMin
+          - SoftMax
+          - Sqrt
+          - Square
+          - Tanh
+          - TanhShrink
 
     - name: kwargs
       description: other arguments to advanced activations such as PRLeU
